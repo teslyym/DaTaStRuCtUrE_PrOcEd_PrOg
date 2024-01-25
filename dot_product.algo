@@ -14,7 +14,7 @@ BEGIN
     END_FOR
     return ps
 END
-FUNCTION checkOrthogonal(n, vectorPairs) : INTEGER
+FUNCTION checkorthogonal(n, vectorPairs) : INTEGER
 VAR
     // n is the number of vector pairs 
     n: = INTEGER := 2
@@ -27,3 +27,14 @@ BEGIN
     v1 = vectorPairs[i][1]
     v2 = vectorPairs[i][2]
     END_FOR
+
+    // calculation of the dot product by calling dot_product procedure 
+    dotprodct = dot_product(v1,v2)
+    //check if orthogonal
+    IF () THEN
+        
+    IF (dotprodct = 0) THEN
+        RETURN `Vectors in pairs ${i} are orthogonal.
+    ELSE
+        RETURN `Vectors in pairs ${i} are not orthogonal.`
+    END_IF
