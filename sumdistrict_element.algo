@@ -6,4 +6,17 @@ VAR
     sum : INTEGER := 0
     mergearr : ARRAY_OF INTEGER[];
 BEGIN
-   
+    // merge two arrays
+    mergearr = set1.concat(set2);
+
+
+
+ FOR i FROM i < unique_arr STEP 1  DO
+        FOR i FROM 0 TO mergearr DO
+            IF (unique_arr.indexOf(i) === -1) THEN
+                unique_arr.push(i)
+            END_IF
+        END_FOR
+        sum += unique_arr[i]                            
+    END_FOR
+END
