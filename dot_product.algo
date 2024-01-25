@@ -8,9 +8,22 @@ BEGIN
      FOR i FROM 1 TO v1.length DO
         // Check if the length of vector are equal
         IF (v1.length != v2.length) THEN
-            return " Vectors must be of same length";
+            return "Vectors must be of same length";
         END_IF
-        ps += v1[i] * v2[i]; 
+        ps += v1[i]*v2[i]; 
     END_FOR
     return ps
 END
+FUNCTION checkOrthogonal(n, vectorPairs) : INTEGER
+VAR
+    // n is the number of vector pairs 
+    n: = INTEGER := 2
+    //vectorPairs is an array with 2 rows where each represents one vector
+    vectorPairs : ARRAY_OF INTEGER[length];
+BEGIN
+    // traverse through each vector pair
+    FOR i FROM 1 TO n DO
+    // extracting vector from the pairs
+    v1 = vectorPairs[i][1]
+    v2 = vectorPairs[i][2]
+    END_FOR
