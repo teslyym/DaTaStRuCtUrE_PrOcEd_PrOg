@@ -6,9 +6,9 @@ VAR
     sum : INTEGER := 0
     mergearr : ARRAY_OF INTEGER[];
 BEGIN
-    // merge two arrays
+    // merging two arrays
     mergearr = set1.concat(set2);
-
+    
 
 
  FOR i FROM i < unique_arr STEP 1  DO
