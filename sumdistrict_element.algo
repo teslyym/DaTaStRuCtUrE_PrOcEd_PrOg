@@ -1,0 +1,9 @@
+ALGORITHM Sum of Distinct Elements
+VAR
+    set1 : ARRAY_OF type[3,1,7,9];
+    set2 : ARRAY_OF INTEGER[2,4,1,9,3]
+    unique_arr: ARRAY_OF INTEGER[];
+    sum : INTEGER := 0
+    mergearr : ARRAY_OF INTEGER[];
+BEGIN
+   
